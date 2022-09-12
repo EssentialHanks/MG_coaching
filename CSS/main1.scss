@@ -1,0 +1,92 @@
+/*# sourceMappingURL=main.css.map */
+$background:#FAEBD7;
+$font-size:40px;
+
+
+*{
+    padding:5px;
+    margin:5px;
+}
+
+.container {
+    display:grid;
+    height:100vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:.2fr .2fr .2fr .2fr;
+    grid-gap:.2rem;
+    font-weight:500;
+    font-size:23px;
+    font-family:garamond,arial;
+    text-align:center;
+   grid-template-areas:
+    
+     "welcome welcome content content"
+     "strategy strategy strategy strategy"
+     "fatloss muscle recomp mghfc"
+     "actualprogram actualprogram actualprogram actualprogram"
+     
+    
+    
+  }
+  
+  #welcome {
+   background:$background;
+    grid-area:welcome;
+    
+  }
+  .well{
+    font-size:$font-size;
+  }
+  #content{
+     background:$background;
+    grid-area:content;
+  }
+  .content{
+    font-size:$font-size;
+  }
+  
+  #strategy{
+     background:#87CEFA;
+    grid-area:strategy;
+    font-size:$font-size;
+  }
+  #fatloss {
+     background:$background;
+    grid-area:fatloss;
+  }
+  
+  #muscle {
+     background:$background;
+    grid-area:muscle;
+  }
+  
+  #recomp{
+     background:$background;
+    grid-area:recomp;
+  }
+  #mghfc {
+     background:$background;
+    grid-area:mghfc;
+  }
+  #actualprogram{
+    background:#87CEFA
+  ;
+    grid-area:actualprogram;
+  }
+  
+  @media only screen and (max-width:550px) {
+    .container{
+  grid-template-columns:1fr;
+    grid-template-rows:.5fr .5fr .3fr .4fr .4fr .4fr .4fr .5fr;
+    grid-template-areas:
+      "welcome"
+      "content"
+      "strategy"
+      "fatloss"
+      "muscle"
+      "recomp"
+      "mghfc"
+      "actualprogram"
+    }}
+  
+  
